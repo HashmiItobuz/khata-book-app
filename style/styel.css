@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-heading, .app-icon{
+    color:#d92d20 ;
+}
+
+.khata-book-container {
+    width: 40%;
+    background-color: #fdf2f3;
+}
+
+.input-box {
+    width:80%;
+    border: 2px solid #bbbbbb;
+}
+
+.input-field {
+    width: 47%;
+}
+
+.name-input-box,.amount-input-box:focus{
+    outline: none;
+}
+
+.name-input-box, .amount-input-box {
+    width:85%;
+    border: none;
+}
+
+.input-button {
+    background-color: #d92d20;
+}
+
+.name-input-box::placeholder {
+    font-size: 1.5rem;
+}
+
+.amount-input-box::placeholder {
+    font-size: 1.5rem;
+}
+
+.user-box{
+    width:82%;
+    background-color: #d92d20;
+}
+
+.title {
+    width:78%;
+}
