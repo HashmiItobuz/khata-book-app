@@ -44,10 +44,22 @@ body {
 }
 
 .user-box{
-    width:82%;
+    width:90%;
     background-color: #d92d20;
+}
+
+.display-box {
+    width:100%;
 }
 
 .title {
     width:78%;
+}
+
+.editButton {
+    background-color: #d92d20;
+}
+
+.hidden {
+    
 }
