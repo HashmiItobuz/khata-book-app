@@ -4,30 +4,37 @@ body {
     box-sizing: border-box;
 }
 
-.app-heading, .app-icon{
-    color:#d92d20 ;
+.app-heading,
+.app-icon {
+    color: #d92d20;
 }
 
 .khata-book-container {
-    width: 40%;
+    width: 100%;
     background-color: #fdf2f3;
 }
 
 .input-box {
-    width:80%;
+    width: 100%;
     border: 2px solid #bbbbbb;
 }
 
 .input-field {
-    width: 47%;
+    width: 100%;
 }
 
-.name-input-box,.amount-input-box:focus{
+.name-input-box {
+    text-transform: capitalize;
+}
+
+.name-input-box,
+.amount-input-box:focus {
     outline: none;
 }
 
-.name-input-box, .amount-input-box {
-    width:85%;
+.name-input-box,
+.amount-input-box {
+    width: 85%;
     border: none;
 }
 
@@ -43,23 +50,66 @@ body {
     font-size: 1.5rem;
 }
 
-.user-box{
-    width:90%;
+.user-box {
+    width: 100%;
     background-color: #d92d20;
 }
 
 .display-box {
-    width:100%;
+    width: 100%;
 }
 
 .title {
-    width:78%;
+    width: 100%;
 }
 
 .editButton {
     background-color: #d92d20;
 }
 
-.hidden {
+.displayBox {
+    display: none;
+}
+
+
+
+@media screen and (min-width:768px){
+    .khata-book-container  {
+        width:80%;
+    }
+
+    .input-box {
+        width:80%;
+    }
+
+    .input-field  {
+        width: 47%;
+    }
+
+    .user-box {
+        width: 90%;
+    }
+
+    .title {
+        width: 78%;
+    }
     
+}
+
+@media screen and (min-width:1440px) {
+    .khata-book-container  {
+        width:40%;
+    }
+    
+    .input-box {
+        width:80%;
+    }
+
+    .input-field  {
+        width: 47%;
+    }
+
+    .title {
+        width: 78%;
+    }
 }
