@@ -12,6 +12,7 @@ body {
 .khata-book-container {
     width: 100%;
     background-color: #fdf2f3;
+    max-height: 100vh;
 }
 
 .input-box {
@@ -21,10 +22,6 @@ body {
 
 .input-field {
     width: 100%;
-}
-
-.name-input-box {
-    text-transform: capitalize;
 }
 
 .name-input-box,
@@ -42,8 +39,14 @@ body {
     background-color: #d92d20;
 }
 
+.name-input-box {
+    border-bottom: 2px solid #bbbbbb;
+    text-transform: capitalize;
+}
+
 .name-input-box::placeholder {
     font-size: 1.5rem;
+    text-transform: none;
 }
 
 .amount-input-box::placeholder {
@@ -63,26 +66,30 @@ body {
     width: 100%;
 }
 
-.editButton {
+.edit-button {
     background-color: #d92d20;
 }
 
-.displayBox {
+.display-box {
     display: none;
 }
 
+.output-box {
+    max-height: 60vh;
+    overflow: scroll;
+}
 
 
-@media screen and (min-width:768px){
-    .khata-book-container  {
-        width:80%;
+@media screen and (min-width: 768px) {
+    .khata-book-container {
+        width: 80%;
     }
 
     .input-box {
-        width:80%;
+        width: 80%;
     }
 
-    .input-field  {
+    .input-field {
         width: 47%;
     }
 
@@ -93,19 +100,24 @@ body {
     .title {
         width: 78%;
     }
-    
+
+    .name-input-box {
+        border-right: 2px solid #bbbbbb;
+        border-bottom: 0px;
+    }
+
 }
 
-@media screen and (min-width:1440px) {
-    .khata-book-container  {
-        width:40%;
-    }
-    
-    .input-box {
-        width:80%;
+@media screen and (min-width: 1440px) {
+    .khata-book-container {
+        width: 40%;
     }
 
-    .input-field  {
+    .input-box {
+        width: 80%;
+    }
+
+    .input-field {
         width: 47%;
     }
 
